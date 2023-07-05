@@ -13,9 +13,6 @@
       }
     ]
   },
-  "background": {
-    "service_worker": "script.js"
-  },
   "host_permissions": ["https://*/*"],
   "permissions": ["declarativeNetRequest"]
 }
