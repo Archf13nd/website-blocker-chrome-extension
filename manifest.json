@@ -1,0 +1,21 @@
+{
+  "name": "Website Blocker",
+  "version": "1.0.0",
+  "description": "Blocks a list of websites that waste my time",
+  "manifest_version": 3,
+  "author": "Alastiar",
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "background": {
+    "service_worker": "script.js"
+  },
+  "host_permissions": ["https://*/*"],
+  "permissions": ["declarativeNetRequest"]
+}
